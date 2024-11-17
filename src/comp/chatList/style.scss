@@ -1,0 +1,30 @@
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: red transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  &:horizontal {
+    border-radius: 10px 0 0 10px;
+  }
+  &:vertical {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}

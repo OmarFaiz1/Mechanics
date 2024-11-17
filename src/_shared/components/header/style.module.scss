@@ -1,0 +1,54 @@
+@import "../../utils/responsive.module.scss";
+@import "../../utils/colors.scss";
+
+.headerContainer {
+  background-color: black;
+}
+.listingButton {
+  border-radius: 400px;
+  @include RP(
+    (
+      "width": 155,
+      "height": 42,
+    )
+  );
+}
+
+.navBar {
+  @include RP(
+    (
+      "padding": 20,
+    )
+  );
+}
+.leftNavbarElements {
+  @include RP(
+    (
+      "gap": 24,
+    )
+  );
+}
+
+.rightNavbarElements {
+  @include RP(
+    (
+      "gap": 16,
+    )
+  );
+}
+
+// .bgImage {
+//   @include RP(
+//     (
+//       "width": 1440,
+//     )
+//   );
+// }
+
+.imgText {
+  @include RP(
+    (
+      "font-size": 40,
+    )
+  );
+}

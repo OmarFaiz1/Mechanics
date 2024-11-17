@@ -1,0 +1,38 @@
+@import "../../_shared/utils/responsive.module.scss";
+
+/* ChatWindow.module.scss */
+
+.chatWindow {
+  padding: 10px;
+  display: none; // Default to hidden
+
+  @media (min-width: 768px) {
+    display: flex; // Show on larger screens
+    flex-direction: column;
+  }
+
+  &.active {
+    display: flex; // Use this class to show the window
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #0078d4;
+  color: white;
+
+  .backButton {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+.messageArea {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  overflow-y: auto;
+}

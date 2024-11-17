@@ -1,0 +1,63 @@
+@import "../../../utils/responsive.module.scss";
+
+.chatContainer {
+  @include RP(
+    (
+      "padding": 50,
+    )
+  );
+}
+
+.searchBar {
+  @include RP(
+    (
+      "width": 300,
+    )
+  );
+}
+
+.leftSideOfChat {
+  @include RP(
+    (
+      "padding": 10,
+    )
+  );
+}
+
+.navigationLinks {
+  @include RP(
+    (
+      "gap": 60,
+    )
+  );
+}
+
+.allChats {
+  @include RP(
+    (
+      "padding": 10,
+    )
+  );
+}
+
+.truncate {
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Display ellipsis */
+}
+
+@media (max-width: 768px) {
+  /* Adjust this value based on your design */
+  .truncate {
+    width: 150px; /* Set a fixed width for small screens */
+  }
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; // This limits it to 1 line, you can adjust the number if you want more lines
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
